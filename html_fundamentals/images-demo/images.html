@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <body>
+    <!-- Relative paths -->
+    <!-- 
+      "." is an alias for the current directory that holds this file
+      If the file can't be found or loaded, the text in the "alt" attribute
+      will be displayed instead. Also used in screen readers when 
+      describing images.
+      ./tree.jpg -> images-demo/tree.jpg 
+     -->
+    <img src="./tree.jpg" alt="Tree" />
+
+    <!-- Relative to the root of this directory of this file (same as above) -->
+    <img src="tree.jpg" alt="tree" />
+
+    <!-- 
+      ".." is an alias for the parent directory
+      The current directory that this file resides in is "image-demo"
+      The parent of "image-demo" is "html-fundamentals" where "dragon-fly.jpg"
+      is located.
+      ../dragon-fly.jpg -> html-fundamentals/dragon-fly.jpg
+     -->
+    <img src="../dragon-fly.jpg" alt="dragon-fly" />
+
+    <!-- Absolute paths -->
+    <!-- 
+      "/" is an alias for the root of the website that's hosted by
+      your server in this case, if we're using the live server extension, the root of the server is
+      the directory that vscode has opened. "/" is an alias for the root of the drive on your machine
+      if you just open the file itself.
+     -->
+    <img src="/html_fundamentals/dragon-fly.jpg" alt="dragon fly" />
+    <img src="/html_fundamentals/images-demo/tree.jpg" alt="tree" />
+
+    <!-- 
+      We can access an image from the internet using HTTP
+      In Chrome, you can access the location of the image by right clicking
+      and selecting "copy image address"
+     -->
+    <img
+      src="https://images.freeimages.com/images/small-previews/a61/vikingland-1316664.jpg"
+      alt="viking land"
+    />
+  </body>
+</html>
