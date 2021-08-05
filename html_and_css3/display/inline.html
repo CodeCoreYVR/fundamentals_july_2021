@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline</title>
+    <style>
+      a {
+        display: inline; /* default display for <a> */
+        background-color: yellow;
+
+          /* 
+            height and width don't affect inline elements,
+            they only take up the height and width
+            that's needed for the content
+          */
+        height: 9000px;
+        width: 9000px;
+
+          /* top and bottom margin aren't affected but left and right are */
+
+        margin-top: 200px;
+        margin-left: 200px;
+      }
+
+      /* Even though <p> are block by default, you can always change the default display to something else */
+
+      p {
+        display: inline;
+      }
+      #second-paragraph {
+        background-color: aquamarine
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio
+      quis odit alias natus perspiciatis consequatur esse provident tempora
+      maiores distinctio eius dolorum consectetur nulla expedita, velit culpa
+      fugit molestias.
+    </p>
+    <p id="second-paragraph">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio
+      quis odit alias natus perspiciatis consequatur esse provident tempora
+      maiores distinctio eius dolorum consectetur nulla expedita, velit culpa
+      fugit molestias.
+    </p>
+    <p>
+      Lorem, <a href="https://google.ca">INLINE LINK TO GOOGLE</a> ipsum dolor
+      sit amet consectetur adipisicing elit. Corrupti odio quis odit alias natus
+      perspiciatis consequatur esse provident tempora maiores distinctio eius
+      dolorum consectetur nulla expedita, velit culpa fugit molestias.
+    </p>
+  </body>
+</html>
