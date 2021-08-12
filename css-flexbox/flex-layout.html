@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex layout</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin-left: 2vw;
+      margin-right: 2vw;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+    }
+    .flex-row {
+      flex: 3;
+      display: flex;
+      margin-left:0;
+      margin-right: 0;
+      justify-content: space-around;
+    }
+    .item, .main {
+      flex: 3;
+      background-color: teal;
+      color: white;
+    }
+    .container-child{
+      margin-top:2vw
+    }
+    .logo {
+      max-width: 15%;
+    }
+    .nav {
+      max-width: 40%;
+    }
+    .small.item {
+      max-width: 16vw;
+    }
+    .large.item {
+      max-width: 60vw;
+    }
+    *{
+      border-radius: 3px
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container-child header">
+      <div class="logo item">Logo</div>
+      <div class="nav item">Nav Menu</div>
+    </div>
+    <div class="container-child main">Main Box</div>
+    <div class="container-child flex-row">
+      <div class="large item">Large Box</div>
+      <div class="small item">Small Box</div>
+      <div class="small item">Small Box</div>
+    </div>
+    <div class="container-child flex-row">
+      <div class="large item">Large Box</div>
+      <div class="small item">Small Box</div>
+      <div class="small item">Small Box</div>
+    </div>
+  </div>
+</body>
+</html>
