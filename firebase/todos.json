@@ -1,0 +1,12 @@
+{
+  "todos": {
+    "1": {
+      "name": "Buy groceries",
+      "isComplete": false
+    },
+    "2": {
+      "name": "prepare for bootcamp",
+      "isComplete": false
+    }
+  }
+}
